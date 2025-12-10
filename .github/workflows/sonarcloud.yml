@@ -10,14 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout your repository code
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # Run SonarCloud Analysis
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@b4c89556e8e28cf383e12818738c5822047cb9cb
+        uses: SonarSource/sonarcloud-github-action@v2
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
