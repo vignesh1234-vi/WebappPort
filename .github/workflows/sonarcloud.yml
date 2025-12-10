@@ -26,6 +26,5 @@ jobs:
             -Dsonar.organization=m-vignesh
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.sources=.
-            -Dsonar.inclusions=**
             -Dsonar.exclusions=**/*.test.js,**/*.spec.js
             -Dsonar.verbose=true
